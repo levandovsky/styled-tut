@@ -12,3 +12,7 @@
 - Create folder `molecules`
 - Create `Field` molecule
 - It should accept prop `label` and render it togeter with `Input` atom
+
+## Part 3
+- Inputs in `Cars` page are independent, make them stay in sync
+- Second Input should have the same value as the first one

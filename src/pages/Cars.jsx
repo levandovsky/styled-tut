@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {Input} from "../atoms/Inputs";
+import {Field} from "../molecules/Field";
 
 const Wrapper = styled.div`
     margin: 1rem;
@@ -7,7 +7,7 @@ const Wrapper = styled.div`
 
 export const Cars = () => (
     <Wrapper>
-        <Input />
-        <Input />
+        <Field label="first input" />
+        <Field label="second input" />
     </Wrapper>
 );
