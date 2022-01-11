@@ -1,13 +1,17 @@
-import styled from "styled-components";
+import {useState} from "react";
+import {Block} from "../atoms/Block";
 import {Field} from "../molecules/Field";
 
-const Wrapper = styled.div`
-    margin: 1rem;
-`;
+export const Cars = () => {
+    const [text, setText] = useState("");
+    const handleChange = (e) => {
+        setText(e.target.value);
+    };
 
-export const Cars = () => (
-    <Wrapper>
-        <Field label="first input" />
-        <Field label="second input" />
-    </Wrapper>
-);
+    return (
+        <Block>
+            <Field label="Field one" value={text} onChange={handleChange} />
+            <Field label="Field two" value={text} readOnly />
+        </Block>
+    );
+};
